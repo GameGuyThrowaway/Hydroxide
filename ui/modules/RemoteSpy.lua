@@ -858,7 +858,9 @@ scriptContext:SetCallback(function()
             local valueType = type(v)
             local robloxValueType = typeof(v)
             local variableName = robloxValueType:sub(1, 1):upper() .. robloxValueType:sub(2)
-
+            
+            
+            rconsolewarn(tostring(valueType) .. " : " .. tostring(v))
             if valueType == "userdata" then
                 v = (typeof(v) == "Instance" and getInstancePath(v)) or userdataValue(v)
             elseif valueType == "table" then
