@@ -1,3 +1,6 @@
+## Fixes
+This Fork of Hydroxide fixes the previous issue of not adding Vector3.new() to your generated pseudocode
+
 ## Script
 ```lua
 local owner = "GameGuyThrowaway"
