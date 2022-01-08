@@ -264,6 +264,8 @@ if readFile and writeFile then
 
                 if not ran then
                     content = game:HttpGetAsync("https://raw.githubusercontent.com/" .. user .. "/Hydroxide/" .. branch .. '/' .. asset .. ".lua")
+                    print("File: "..tostring(file))
+                    print("Content: "..tostring(content))
                     writeFile(file, content)
                 else
                     content = result
